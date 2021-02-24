@@ -29,7 +29,7 @@ self.addEventListener('fetch',(e)=>{
                                             return fetch_response;
                                     }).catch(err=>{
                                         console.log(err);
-                                        returnfetch(e.request)
+                                        return fetch(e.request)
                                     });
              })
         })
