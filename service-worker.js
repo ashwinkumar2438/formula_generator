@@ -7,7 +7,10 @@ let passChecks=[
     'css',
     '/index.html'
 ];
-let passUrl=(url='')=>passChecks.some(check=>url.includes(check));
+let passUrl=(url='')=>{
+    if(url.substr(-1)==='/')return true;
+    else return passChecks.some(check=>url.includes(check));
+}
 
 let cacheName='static-files';
 
