@@ -1,0 +1,2 @@
+*{box-sizing:border-box;font-family:'Open Sans', sans-serif}:root{font-size:14px}body{margin:0;padding:0;background-color:aqua;height:100vh}.header{width:max-content;margin:50px auto}.header .header-text{width:0;font-size:2rem;font-weight:600;overflow:hidden;white-space:nowrap;transition:all 2s}.header .header-text.show-header{width:100%}
+/*# sourceMappingURL=styles.min.css.map */
