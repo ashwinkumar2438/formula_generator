@@ -12,7 +12,7 @@ font-size:14px;
 body{
     margin:0;
     padding:0;
-    background-color: rgb(251, 251, 255);
+    background-color: $background-color;
     height: 100vh;
 }
 
@@ -22,6 +22,7 @@ body{
     .header-text{
         width:0;
         font-size:2rem;
+        height:3rem;
         font-weight:600;
         overflow: hidden;
         white-space: nowrap;
@@ -53,6 +54,7 @@ body{
         line-height:1rem;
         height: 2.5rem;
         color: $font-color;
+        background-color:$input-background;
         border:1px solid $base-color;
     }
     .warning{
@@ -136,5 +138,39 @@ body{
        .button-box{
            margin-top: 10vw;
        }
+    }
+}
+
+.color-code-box{
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 2vw;
+
+    .color-code{
+        outline:none;
+        height: 2vw;
+        width:3vw;
+        border:0;
+        border-bottom:1px solid maroon;
+        cursor: pointer;
+        transition: all 0.1s;
+        &.white{
+            background-color: lightskyblue;
+        }
+        &.dark{
+            background-color: black;
+        }
+        &.color{
+            background-color: moccasin;
+        }
+        &:hover{
+           transform:scale(1.05);
+        }
+        &:active{
+            transform: scale(0.95);
+            border:none;
+        }
+
     }
 }

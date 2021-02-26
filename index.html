@@ -20,7 +20,7 @@
 <body>
   
     <div class="header">
-        <div class="header-text">My Application</div>
+        <div class="header-text">Coordinate Calculator</div>
     </div>
     <div class="form-page">
         <div class="form">
@@ -34,21 +34,21 @@
                 <input type="number" id="degree" data-name="degree" class="input">
                 <div class="warning">Degree is required</div>
             </div>
-            <label for="old-east">Old East</label>
+            <label for="old-east">Easting</label>
             <div class="input-box">
                 <input type="number" id="old-east" data-name="old_east" class="input">
-                <div class="warning">Old East it required.</div>
+                <div class="warning">Easting is required.</div>
             </div>
             
-            <label for="old-north">Old North</label>
+            <label for="old-north">Northing</label>
             <div class="input-box">
                 <input type="number" id="old-north" data-name="old_north" class="input">
-                <div class="warning">Old North is required.</div>
+                <div class="warning">Northing is required.</div>
             </div>
-            <label for="bg">bg</label>
+            <label for="bg">Brg to Tgt</label>
             <div class="input-box">
                 <input type="number" id="bg" data-name="bg" class="input">
-                <div class="warning">bg is required.</div>
+                <div class="warning">Brg to Tgt is required.</div>
             </div>
             
         </div>
@@ -57,7 +57,7 @@
             <button class="clear-button">Clear</button>
         </div>
     </div>
-    <div class="result-page">
+    <div class="result-page" style="display: none;">
         <h3 class="result-header">Results</h3>
         <div class="copy-alert">(click to copy values)</div>
         <div class="base result-output"><span class="text">Value of D: </span><span class="value"><span></div>
@@ -66,6 +66,12 @@
         <div class="button-box">
             <button class="back-button">Back</button>
         </div>
+    </div>
+
+    <div class="color-code-box">
+        <button class="color-code white" data-theme='default'></button>
+        <button class="color-code dark" data-theme='dark'></button>
+        <button class="color-code color" data-theme='colored'></button>
     </div>
 
  <script>

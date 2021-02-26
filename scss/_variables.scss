@@ -1,3 +1,5 @@
-$base-color: lightskyblue;
-$font-color:darkblue;
+$base-color:var(--base-color);
+$font-color:var(--font-color);
+$background-color:var(--background-color);
+$input-background:var(--input-background);
 $mobile-breakpoint:600px;
