@@ -1,0 +1,19 @@
+@mixin button-styles{
+    outline:none;
+    background:none;
+    padding: 0.5vw 1vw;
+    line-height:1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid $base-color;
+    color: $font-color;
+    cursor:pointer;
+    transition:all 0.2s;
+    &:hover{
+        background-color: lightskyblue;
+        color:white;
+    }
+    &:active{
+        transform:scale(0.95);
+    }
+}

@@ -12,7 +12,7 @@ let passUrl=(url='')=>{
     else return passChecks.some(check=>url.includes(check));
 }
 
-let cacheName='static-files';
+let cacheName='static-files-01';
 
 self.addEventListener('activate',(e)=>{
     e.waitUntil(caches.keys().then(keys=>Promise.all(

@@ -8,7 +8,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
         <link rel="mask-icon" href="./assets/icons/safari-pinned-tab.svg" color="#ff0000">
-        <link rel="manifest" href="./manifest.json">
+        <!-- <link rel="manifest" href="./manifest.json"> -->
         <meta name="msapplication-TileColor" content="#ffc40d">
         <meta name="theme-color" content="#ffffff">
     <!--favicon links-->
@@ -22,13 +22,58 @@
     <div class="header">
         <div class="header-text">My Application</div>
     </div>
+    <div class="form-page">
+        <div class="form">
+            <label for="height">Height</label>
+            <div>
+                <input type="number" id="height" data-name="height" class="input">
+                <div class="warning">Height is required</div>
+            </div>
+            <label for="degree">Degree</label>
+            <div class="div">
+                <input type="number" id="degree" data-name="degree" class="input">
+                <div class="warning">Degree is required</div>
+            </div>
+            <label for="old-east">Old East</label>
+            <div class="input-box">
+                <input type="number" id="old-east" data-name="old_east" class="input">
+                <div class="warning">Old East it required.</div>
+            </div>
+            
+            <label for="old-north">Old North</label>
+            <div class="input-box">
+                <input type="number" id="old-north" data-name="old_north" class="input">
+                <div class="warning">Old North is required.</div>
+            </div>
+            <label for="bg">bg</label>
+            <div class="input-box">
+                <input type="number" id="bg" data-name="bg" class="input">
+                <div class="warning">bg is required.</div>
+            </div>
+            
+        </div>
+        <div class="submit">
+            <button class="submit-button">Calculate new cordinates</button>
+            <button class="clear-button">Clear</button>
+        </div>
+    </div>
+    <div class="result-page">
+        <h3 class="result-header">Results</h3>
+        <div class="copy-alert">(click to copy values)</div>
+        <div class="base result-output"><span class="text">Value of D: </span><span class="value"><span></div>
+        <div class="new-east result-output"><span class="text">Value of New East: </span><span class="value"></span></div>
+        <div class="new-north result-output"><span class="text">Value of New North: </span><span class="value"></span></div>
+        <div class="button-box">
+            <button class="back-button">Back</button>
+        </div>
+    </div>
 
  <script>
-     if('serviceWorker' in navigator){
-         navigator.serviceWorker.register('/formula_generator/service-worker.js', {scope: '/formula_generator/'}).then(()=>{
-             console.log('service worker is registered.')
-         })
-     }
+    //  if('serviceWorker' in navigator){
+    //      navigator.serviceWorker.register('/formula_generator/service-worker.js', {scope: '/formula_generator/'}).then(()=>{
+    //          console.log('service worker is registered.')
+    //      })
+    //  }
  </script>   
  <script src="./scripts/index.js" type="module" async></script>   
 </body>
