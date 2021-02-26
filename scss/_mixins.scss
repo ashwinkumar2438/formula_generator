@@ -1,3 +1,10 @@
+@mixin breakpoint($val){
+    @media screen and (max-width: $val) {
+        @content;
+    }
+}
+
+
 @mixin button-styles{
     outline:none;
     background:none;
@@ -15,5 +22,9 @@
     }
     &:active{
         transform:scale(0.95);
+    }
+
+    @include breakpoint($mobile-breakpoint){
+        padding: 2vw 4vw;
     }
 }

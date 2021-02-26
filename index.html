@@ -69,11 +69,11 @@
     </div>
 
  <script>
-    //  if('serviceWorker' in navigator){
-    //      navigator.serviceWorker.register('/formula_generator/service-worker.js', {scope: '/formula_generator/'}).then(()=>{
-    //          console.log('service worker is registered.')
-    //      })
-    //  }
+     if('serviceWorker' in navigator){
+         navigator.serviceWorker.register('/formula_generator/service-worker.js', {scope: '/formula_generator/'}).then(()=>{
+             console.log('service worker is registered.')
+         })
+     }
  </script>   
  <script src="./scripts/index.js" type="module" async></script>   
 </body>
