@@ -19,6 +19,7 @@ body{
 .header{
     width: max-content;
     margin:50px auto;
+    text-align: center;
     .header-text{
         width:0;
         font-size:2rem;
@@ -31,6 +32,10 @@ body{
         &.show-header{
             width:100%;
         }
+    }
+    .app-logo{
+        width:5vw;
+        height:5vw;
     }
 }
 
@@ -56,6 +61,9 @@ body{
         color: $font-color;
         background-color:$input-background;
         border:1px solid $base-color;
+        &:focus{
+            border:1px solid $font-color;
+        }
     }
     .warning{
         color:red;

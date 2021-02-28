@@ -1,6 +1,6 @@
 {
-    "short_name": "Web App",
-    "name": "An App for Calculations",
+    "name": "Coordinate Calculator",
+    "short_name": "Coordinate Calculator",
     "icons": [
       {
         "src": "./assets/icons/android-chrome-192x192.png",
@@ -16,8 +16,8 @@
     ],
     "start_url":"https://ashwinkumar2438.github.io/formula_generator/",
     "scope": "https://ashwinkumar2438.github.io/formula_generator/",
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#87ceeb",
+    "background_color": "#87ceeb",
     "display": "standalone",
-    "description": "Calculate data using this app."
+    "description": "Calculate new coordinates using this app."
   }
